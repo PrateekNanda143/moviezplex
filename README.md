@@ -20,6 +20,10 @@ git clone "https://github.com/PrateekNanda143/moviezplex.git"
 > npm i
 > ```
 
+> ```
+> npm start
+> `
+
 set the env variables accordingly
 
 =========================================================================
