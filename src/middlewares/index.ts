@@ -3,6 +3,13 @@ import Joi from 'joi';
 
 import { get, unset } from 'lodash';
 
+import { createClient } from 'redis';
+
+const client = createClient();
+
+client.on('error', err => console.log('Redis Client Error', err));
+client.connect();
+
 // Middleware to validate request body using Joi
 export const validateBody = async (
   req: express.Request,
@@ -31,8 +38,7 @@ export const validateBody = async (
   }
 };
 
-//
-
+//Admin Check
 export const isAdmin = async (
   req: express.Request,
   res: express.Response,
@@ -51,5 +57,25 @@ export const isAdmin = async (
     return res.status(403).json({ error: 'Permission Denied' });
   } catch (error) {
     console.log(error);
+    return res.status(400);
+  }
+};
+
+// Redis Caching
+export const isCached = async (
+  req: express.Request,
+  res: express.Response,
+  next: express.NextFunction
+) => {
+  try {
+    const value = await client.get('movies');
+    if (value != null) {
+      return res.json(JSON.parse(value));
+    } else {
+      return next();
+    }
+  } catch (error) {
+    console.log(error);
+    return res.status(400);
   }
 };

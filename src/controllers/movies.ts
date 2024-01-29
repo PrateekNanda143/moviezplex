@@ -8,6 +8,15 @@ import {
 } from '../db/movie';
 import { BaseMovie, Movie, MovieQuery, Movies } from '../models/index';
 import express from 'express';
+// import redis from 'redis';
+import { createClient } from 'redis';
+
+const client = createClient();
+
+client.on('error', err => console.log('Redis Client Error', err));
+client.connect();
+
+const EXPIRY = 3600;
 
 // Creating Movies
 export const add = async (req: express.Request, res: express.Response) => {
@@ -30,6 +39,9 @@ export const add = async (req: express.Request, res: express.Response) => {
 export const movies = async (req: express.Request, res: express.Response) => {
   try {
     const getMoviesList: Movies = await getMovies();
+
+    client.setEx('movies', EXPIRY, JSON.stringify(getMoviesList));
+
     return res.status(200).json(getMoviesList);
   } catch (error) {
     console.log(error);

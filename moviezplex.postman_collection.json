@@ -1,0 +1,1227 @@
+{
+	"info": {
+		"_postman_id": "e5c9b4e3-5f1d-455c-8c65-56420ac82ec4",
+		"name": "moviezpleax",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10009282"
+	},
+	"item": [
+		{
+			"name": "Add Movies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"MI20\",\n\"genre\":\"Action\",\n\"rating\":\"5Star\",\n\"link\":\"http://localhost:8009/auth/register\",\n\"role\":\"admin\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/moviezplex/movies/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"moviezplex",
+						"movies",
+						"add"
+					]
+				},
+				"description": "Adding movies "
+			},
+			"response": [
+				{
+					"name": "Add Movies",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"MI24\",\n\"genre\":\"Action\",\n\"rating\":\"5Star\",\n\"link\":\"http://localhost:8009/auth/register\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8001/moviezplex/movies/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"moviezplex",
+								"movies",
+								"add"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20-z21BqhJv3NPWU2Esu7inITGEZoc\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 28 Jan 2024 20:56:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"\\\"role\\\" is required\"\n}"
+				},
+				{
+					"name": "Add Movies",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"MI25\",\n\"genre\":\"Action\",\n\"rating\":\"5Star\",\n\"link\":\"http://localhost:8009/auth/register\",\n\"role\":\"Admin\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8001/moviezplex/movies/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"moviezplex",
+								"movies",
+								"add"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d-s57OVWjJ/QEUg5I8vWnsSzsdm+k\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jan 2024 00:08:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Permission Denied\"\n}"
+				},
+				{
+					"name": "Add Movies",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"MI25\",\n\"genre\":\"Action\",\n\"rating\":\"5Star\",\n\"link\":\"http://localhost:8009/auth/register\",\n\"role\":\"admin\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8001/moviezplex/movies/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"moviezplex",
+								"movies",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"88-+0mc9fzlCUBaiIwoEH9t8nFkYmM\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jan 2024 00:08:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"MI25\",\n    \"genre\": \"Action\",\n    \"rating\": \"5Star\",\n    \"link\": \"http://localhost:8009/auth/register\",\n    \"_id\": \"65b6ec9733a4d22b6758fc92\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Fetch Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/moviezplex/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"moviezplex",
+						"movies"
+					]
+				},
+				"description": "Fetch all the movies"
+			},
+			"response": [
+				{
+					"name": "Fetch Movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/moviezplex/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"moviezplex",
+								"movies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bbf-jo0w/z+4ULF6obv/vSHa60RPh2U\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jan 2024 00:06:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65b55f58b0303f84b6c671fc\",\n        \"title\": \"RED\",\n        \"genre\": \"Comedy\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8001/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b5d0dcd6bb512fe646c355\",\n        \"title\": \"MI\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8002/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b5d106d1ee2f258d4db1b3\",\n        \"title\": \"MI1\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8003/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b5e1fe8d13c4069f369608\",\n        \"title\": \"MI3\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8005/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b5e22d225f064bf5368ce0\",\n        \"title\": \"MI4\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8006/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b654263c28d4c39ca4c424\",\n        \"title\": \"MI5\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8007/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b69d6671b345c4a7d02f98\",\n        \"title\": \"MI9\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b69d9d71b345c4a7d02f9a\",\n        \"title\": \"MI10\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b69ec05f778f748df57213\",\n        \"title\": \"MI11\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8008/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b69ed25f778f748df57215\",\n        \"title\": \"MI11\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a259eb7d24f4b55884c7\",\n        \"title\": \"MI12\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a2bdc66c305a893bd1cd\",\n        \"title\": \"MI13\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a59fd6f88a497de58f87\",\n        \"title\": \"MI14\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a5ff38298238d5393f8e\",\n        \"title\": \"MI15\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a678a8bd4182aee25821\",\n        \"title\": \"MI16\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a816510dcdee025a4747\",\n        \"title\": \"MI17\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a83e51901eb3982be920\",\n        \"title\": \"MI17\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a84451901eb3982be922\",\n        \"title\": \"MI19\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a898fe9b223b0de952de\",\n        \"title\": \"MI20\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6b3f34ebb33cc1fbce93e\",\n        \"title\": \"MI21\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6bd72ea4c2e4af8947652\",\n        \"title\": \"MI23\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6bdf7cb8004599c116a48\",\n        \"title\": \"MI24\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Search Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/moviezplex/movies/search?genre=Action",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"moviezplex",
+						"movies",
+						"search"
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "Action"
+						}
+					]
+				},
+				"description": "Search by query"
+			},
+			"response": [
+				{
+					"name": "Search Movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/moviezplex/movies/search?genre=Action",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"moviezplex",
+								"movies",
+								"search"
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "Action"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"99c-BDdZ3Ne9h7ZzG/ey5BSne2FGrr4\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 28 Jan 2024 20:05:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65b5d0dcd6bb512fe646c355\",\n        \"title\": \"MI\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8002/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b5d106d1ee2f258d4db1b3\",\n        \"title\": \"MI1\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8003/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b5e1fe8d13c4069f369608\",\n        \"title\": \"MI3\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8005/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b5e22d225f064bf5368ce0\",\n        \"title\": \"MI4\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8006/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b654263c28d4c39ca4c424\",\n        \"title\": \"MI5\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8007/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b69d6671b345c4a7d02f98\",\n        \"title\": \"MI9\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b69d9d71b345c4a7d02f9a\",\n        \"title\": \"MI10\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b69ec05f778f748df57213\",\n        \"title\": \"MI11\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8008/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b69ed25f778f748df57215\",\n        \"title\": \"MI11\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a259eb7d24f4b55884c7\",\n        \"title\": \"MI12\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a2bdc66c305a893bd1cd\",\n        \"title\": \"MI13\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a59fd6f88a497de58f87\",\n        \"title\": \"MI14\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a5ff38298238d5393f8e\",\n        \"title\": \"MI15\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a678a8bd4182aee25821\",\n        \"title\": \"MI16\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a816510dcdee025a4747\",\n        \"title\": \"MI17\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a83e51901eb3982be920\",\n        \"title\": \"MI17\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a84451901eb3982be922\",\n        \"title\": \"MI19\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65b6a898fe9b223b0de952de\",\n        \"title\": \"MI20\",\n        \"genre\": \"Action\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8009/auth/register\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "Search Movies title",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/moviezplex/movies/search?title=RED",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"moviezplex",
+								"movies",
+								"search"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "RED"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "137"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"89-zetKTsL5x9yXi+Izzm62dFrjjt4\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jan 2024 00:10:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65b55f58b0303f84b6c671fc\",\n        \"title\": \"RED\",\n        \"genre\": \"Comedy\",\n        \"rating\": \"5Star\",\n        \"link\": \"http://localhost:8001/auth/register\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update Movie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"MI11\",\n    \"genre\": \"Action\",\n    \"rating\": \"5Star\",\n    \"link\": \"http://localhost:8008/auth/register\",\n    \"role\":\"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/moviezplex/movies/65b69ec05f778f748df57213",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"moviezplex",
+						"movies",
+						"65b69ec05f778f748df57213"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Movie",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"MI11\",\n    \"genre\": \"Action\",\n    \"rating\": \"5Star\",\n    \"link\": \"http://localhost:8008/auth/register\",\n    \"role\":\"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/moviezplex/movies/65b69ec05f778f748df57213",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"moviezplex",
+								"movies",
+								"65b69ec05f778f748df57213"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"88-r7Y9OfUUVtQF/pgSN4vBMNCqvjo\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 28 Jan 2024 19:22:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"65b69ec05f778f748df57213\",\n    \"title\": \"MI10\",\n    \"genre\": \"Action\",\n    \"rating\": \"5Star\",\n    \"link\": \"http://localhost:8009/auth/register\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Update Movie",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"MI11\",\n    \"genre\": \"Action\",\n    \"rating\": \"5Star\",\n    \"link\": \"http://localhost:8008/auth/register\"\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/moviezplex/movies/65b69ec05f778f748df57213",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"moviezplex",
+								"movies",
+								"65b69ec05f778f748df57213"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d-s57OVWjJ/QEUg5I8vWnsSzsdm+k\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jan 2024 00:12:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Permission Denied\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"role\":\"admin\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/moviezplex/movies/65b6a5425a2c877936c05842",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"moviezplex",
+						"movies",
+						"65b6a5425a2c877936c05842"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete By Id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"role\":\"admin\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/moviezplex/movies/65b6a5425a2c877936c05842",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"moviezplex",
+								"movies",
+								"65b6a5425a2c877936c05842"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"88-q2f0eoOeD6kJczn7EH8RnPQ2OxU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 28 Jan 2024 19:23:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"65b6a5425a2c877936c05842\",\n    \"title\": \"MI13\",\n    \"genre\": \"Action\",\n    \"rating\": \"5Star\",\n    \"link\": \"http://localhost:8009/auth/register\",\n    \"__v\": 0\n}"
+				}
+			]
+		}
+	]
+}
